@@ -31,8 +31,8 @@ export const Countdown = ({ targetDate, accent }) => {
     return (React.createElement(CountdownContainer, null,
         React.createElement(Part, null,
             React.createElement(Number, { accent: accent }, remainingTime.days),
-            React.createElement(Text, null, "Days")),
+            React.createElement(Text, null, "Dager")),
         React.createElement(Part, null,
             React.createElement(Number, { accent: accent }, remainingTime.hours),
-            React.createElement(Text, null, "Hours"))));
+            React.createElement(Text, null, "Timer"))));
 };
