@@ -1,8 +1,24 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
-// Container for the whole page
+// Global styles to remove the white border and margin
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;  /* Explicitly remove margin from the body */
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background: linear-gradient(135deg, #b5e48c, #52b69a); /* Ensure the background fills the screen */
+  }
+`;
+
 export const PageContainer = styled.div`
-  background: linear-gradient(135deg, #b5e48c, #52b69a);
   color: #fefefe;
   font-family: system-ui, sans-serif;
   min-height: 100vh; /* Fullscreen height */
@@ -13,9 +29,6 @@ export const PageContainer = styled.div`
   justify-content: center;
   text-align: center;
   padding: 0 1rem;
-  overflow: hidden; /* Prevent scrolling */
-  margin: 0;
-  padding: 0;
 `;
 
 // Heading style
@@ -51,17 +64,18 @@ export const SubHeading = styled.h2`
   }
 `;
 
-// Wrapper for the countdowns with custom layout
+// Adjust Countdown Grid for proper spacing
 export const CountdownGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around; /* Spread them out on large screens */
   align-items: center;
-  gap: 2rem;
+  gap: 4rem; /* Increased gap between the countdowns */
   margin-top: 2rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 2rem; /* Adjust gap for mobile */
   }
 `;
 
