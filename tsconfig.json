@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Ensure you're targeting ES2017 or later
+    "module": "esnext",
+    "jsx": "react",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
