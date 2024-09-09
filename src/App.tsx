@@ -32,6 +32,11 @@ const App: React.FC = () => {
             <SubHeading>Julaften</SubHeading>
             <Countdown targetDate="2024-12-24" accent="#f9c74f" />
           </CountdownWrapper>
+
+          <CountdownWrapper>
+            <SubHeading>Mamma sin bursdag</SubHeading>
+            <Countdown targetDate="2025-03-29" accent="#f9c74f" />
+          </CountdownWrapper>
         </CountdownGrid>
       </PageContainer>
     </>
