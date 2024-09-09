@@ -55,11 +55,11 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate, accent }) => {
     <CountdownContainer>
       <Part>
         <Number accent={accent}>{remainingTime.days}</Number>
-        <Text>Days</Text>
+        <Text>Dager</Text>
       </Part>
       <Part>
         <Number accent={accent}>{remainingTime.hours}</Number>
-        <Text>Hours</Text>
+        <Text>Timer</Text>
       </Part>
     </CountdownContainer>
   );
