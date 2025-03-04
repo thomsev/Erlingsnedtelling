@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const PageContainer = styled.div`
-  color: #fefefe;
+  color: rgb(0, 0, 0);
   font-family: system-ui, sans-serif;
   min-height: 100vh; /* Fullscreen height */
   width: 100vw; /* Fullscreen width */
@@ -36,7 +36,7 @@ export const Heading = styled.h1`
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: bold;
-  color: #fefefe;
+  color: rgb(0, 0, 0);
   shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 768px) {
@@ -51,7 +51,7 @@ export const Heading = styled.h1`
 // Subheading style for each countdown
 export const SubHeading = styled.h2`
   font-size: 2rem;
-  color: #fefefe;
+  color: rgb(0, 0, 0);
   margin: 2rem 0 1rem;
   shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 

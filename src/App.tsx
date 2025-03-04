@@ -19,8 +19,18 @@ const App: React.FC = () => {
 
         <CountdownGrid>
           <CountdownWrapper>
-            <SubHeading>100 dagersfesten</SubHeading>
-            <Countdown targetDate="2024-11-22" accent="#f3722c" />
+            <SubHeading>Påske</SubHeading>
+            <Countdown targetDate="2025-04-12" accent="#f1ed02" />
+          </CountdownWrapper>
+
+          <CountdownWrapper>
+            <SubHeading>1Mai/Geddon</SubHeading>
+            <Countdown targetDate="2025-05-01" accent="#1e7416" />
+          </CountdownWrapper>
+
+          <CountdownWrapper>
+            <SubHeading>Kristihimmelfartsdag</SubHeading>
+            <Countdown targetDate="2025-05-29" accent="#f1ed02" />
           </CountdownWrapper>
 
           <CountdownWrapper>
